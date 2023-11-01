@@ -13,9 +13,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const cbrtElement = document.getElementById("cbrt");
     const imulElement = document.getElementById("imul");
     const clz32Element = document.getElementById("clz32");
+    const truncElement = document.getElementById("trunc1");
+    const truncElement2 = document.getElementById("trunc2");
+    const truncElement3 = document.getElementById("trunc3");
+    const ceilElement = document.getElementById("ceil1");
+    const ceilElement2 = document.getElementById("ceil2");
+    const ceilElement3 = document.getElementById("ceil3");
+    const roundElement = document.getElementById("round1");
+    const roundElement2 = document.getElementById("round2");
+    const roundElement3 = document.getElementById("round3");
+    const floorElement = document.getElementById("floor1");
+    const floorElement2 = document.getElementById("floor2");
+    const floorElement3 = document.getElementById("floor3");
 
-    const x = 10; 
-    const y = -10; 
+    const x = 10;
+    const y = -10;
 
     absElement.innerHTML = `Math.abs(${x}) = ${Math.abs(x)}`;
     absElement2.innerHTML = `Math.abs(${y}) = ${Math.abs(y)}`;
@@ -31,4 +43,16 @@ document.addEventListener("DOMContentLoaded", function () {
     cbrtElement.innerHTML = `Math.cbrt(${x}) = ${Math.cbrt(x)}`;
     imulElement.innerHTML = `Math.imul(5, 10) = ${Math.imul(5, 10)}`;
     clz32Element.innerHTML = `Math.clz32(8) = ${Math.clz32(8)}`;
+    truncElement.innerHTML = `Math.trunc(5.75) = ${Math.trunc(5.75)}`;
+    truncElement2.innerHTML = `Math.trunc(-3.25) = ${Math.trunc(-3.25)}`;
+    truncElement3.innerHTML = `Math.trunc(7) = ${Math.trunc(7)}`;
+    ceilElement.innerHTML = `Math.ceil(5.1) = ${Math.ceil(5.1)}`;
+    ceilElement2.innerHTML = `Math.ceil(-3.9) = ${Math.ceil(-3.9)}`;
+    ceilElement3.innerHTML = `Math.ceil(7) = ${Math.ceil(7)}`;
+    roundElement.innerHTML = `Math.round(5.1) = ${Math.round(5.1)}`;
+    roundElement2.innerHTML = `Math.round(5.6) = ${Math.round(5.6)}`;
+    roundElement3.innerHTML = `Math.round(7) = ${Math.round(7)}`;
+    floorElement.innerHTML = `Math.floor(5.1) = ${Math.floor(5.1)}`;
+    floorElement2.innerHTML = `Math.floor(5.6) = ${Math.floor(5.6)}`;
+    floorElement3.innerHTML = `Math.floor(7) = ${Math.floor(7)}`;
 });
